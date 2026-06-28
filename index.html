@@ -8,6 +8,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
   <title>Weather app</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,65 +22,31 @@
   <div class="page-container">
     <div class="header">
       <img src="assets/images/logo.svg" />
-      <select>
-        <img src="assets/images/icon-units.svg" />
-        <option>Units</option>
+      <select name="units">
+        <option value="cel" selected>Celsius (°C)</option>
+        <option value="fah">Fahrenheit (°F)</option>
         <img src="assets/images/icon-dropdown.svg" />
       </select>
     </div>
-    <!-- Switch to Imperial/Metric
 
-    Temperature
-
-    Celsius (°C)
-    Fahrenheit (°F)
-
-    Wind Speed
-
-    km/h
-    mph
-
-    Precipitation
-
-    Millimeters (mm)
-    Inches (in) -->
     <div class="banner">
       <h1>How's the sky looking today?</h1>
-      <form action="#">
+      <form>
         <input placeholder="Search for a city, e.g., New York" />
-        <button>Search</button>
+        <button type="submit">Search</button>
       </form>
-
     </div>
 
     <div class="forecast">
       <div class="place-info">
-        <h3>Berlin, Germany</h3>
-        <p>Sunday, Jun 28, 2026</p>
+        <h3 class="timezone">Berlin, Germany</h3>
+        <p class="date-time">Sunday, Jun 28, 2026</p>
       </div>
       <div class="weather-info">
-        <img src="assets/images/icon-sunny.webp" />
-        <h3>20°</h3>
+        <img class="icon" src="assets/images/icon-sunny.webp" />
+        <h3 class="degree">20</h3>
       </div>
-
     </div>
-    <!-- Feels like -->
-    <!-- Insert temperature here -->
-
-    <!-- Humidity -->
-    <!-- Insert humidity here -->
-
-    <!-- Wind -->
-    <!-- Insert wind here -->
-
-    <!-- Precipitation -->
-    <!-- Insert precipitation here -->
-
-    <!-- Daily forecast -->
-    <!-- Insert daily forecast for the next 7 days here -->
-
-    <!-- Hourly forecast -->
-    <!-- Insert hourly forecast for the selected day here -->
 
   </div>
   <script src="script.js"></script>

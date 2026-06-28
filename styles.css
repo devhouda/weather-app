@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "DM Sans", sans-serif;
   background-color: hsl(243, 96%, 9%);
   color: hsl(0, 0%, 100%);
 }
@@ -21,7 +22,7 @@ body {
 
 .header select {
   display: block;
-  width: 80px;
+  width: fit-content;
   height: 30px;
   border: none;
   background-color: hsl(243, 27%, 20%);
@@ -39,7 +40,8 @@ body {
 }
 
 .banner h1 {
-  font-size: 40px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 46px;
   text-align: center;
   margin: 50px 0;
 }
@@ -89,6 +91,7 @@ body {
 
 .place-info h3 {
   font-size: 24px;
+  text-transform: capitalize;
 }
 
 .place-info p {
