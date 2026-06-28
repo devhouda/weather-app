@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Weather app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Weather app</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <div class="page-container">
+    <div class="header">
+      <img src="assets/images/logo.svg" />
+      <select>
+        <img src="assets/images/icon-units.svg" />
+        <option>Units</option>
+        <img src="assets/images/icon-dropdown.svg" />
+      </select>
+    </div>
+    <!-- Switch to Imperial/Metric
 
-  Units
+    Temperature
 
-  Switch to Imperial/Metric
+    Celsius (°C)
+    Fahrenheit (°F)
 
-  Temperature
+    Wind Speed
 
-  Celsius (°C)
-  Fahrenheit (°F)
+    km/h
+    mph
 
-  Wind Speed
+    Precipitation
 
-  km/h
-  mph
+    Millimeters (mm)
+    Inches (in) -->
+    <div class="banner">
+      <h1>How's the sky looking today?</h1>
+      <form action="#">
+        <input placeholder="Search for a city, e.g., New York" />
+        <button>Search</button>
+      </form>
 
-  Precipitation
+    </div>
 
-  Millimeters (mm)
-  Inches (in)
+    <div class="forecast">
+      <div class="place-info">
+        <h3>Berlin, Germany</h3>
+        <p>Sunday, Jun 28, 2026</p>
+      </div>
+      <div class="weather-info">
+        <img src="assets/images/icon-sunny.webp" />
+        <h3>20°</h3>
+      </div>
 
-  How's the sky looking today?
+    </div>
+    <!-- Feels like -->
+    <!-- Insert temperature here -->
 
-  Search for a city, e.g., New York
-  Search
+    <!-- Humidity -->
+    <!-- Insert humidity here -->
 
-  Feels like
-  <!-- Insert temperature here -->
+    <!-- Wind -->
+    <!-- Insert wind here -->
 
-  Humidity
-  <!-- Insert humidity here -->
+    <!-- Precipitation -->
+    <!-- Insert precipitation here -->
 
-  Wind
-  <!-- Insert wind here -->   
-  
-  Precipitation
-  <!-- Insert precipitation here -->
+    <!-- Daily forecast -->
+    <!-- Insert daily forecast for the next 7 days here -->
 
-  Daily forecast
-  <!-- Insert daily forecast for the next 7 days here -->
+    <!-- Hourly forecast -->
+    <!-- Insert hourly forecast for the selected day here -->
 
-  Hourly forecast
-  <!-- Insert hourly forecast for the selected day here -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

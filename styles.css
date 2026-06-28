@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(243, 96%, 9%);
+  color: hsl(0, 0%, 100%);
+}
+
+.page-container {
+  padding: 40px 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header select {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: hsl(243, 27%, 20%);
+  color: hsl(250, 6%, 84%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.banner form {
+  margin: 0 auto;
+}
+
+.banner input {
+  width: 280px;
+  background-color: hsl(243, 27%, 20%);
+  color: hsl(250, 6%, 84%);
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.banner button {
+  background-color: hsl(233, 67%, 56%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  width: 70px;
+  margin-left: 5px;
+}
+
+.forecast {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("assets//images/bg-today-large.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 665px;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+.place-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.place-info h3 {
+  font-size: 24px;
+}
+
+.place-info p {
+  color: hsl(250, 6%, 84%);
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-info h3 {
+  font-size: 64px;
+}
+
+.forecast img {
+  width: 80px;
+  height: 80px;
+}
