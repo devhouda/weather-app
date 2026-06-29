@@ -41,5 +41,5 @@ form.addEventListener("submit", async (e) => {
   degreeOutput.textContent = outputs[0];
   dateTimeOutput.textContent = outputs[1];
   timezone.textContent = outputs[2];
-  icon.src = `${outputs[3].includes("cloudy") ? "assets/images/icon-sunny.webp" : outputs[3].includes("snow") ? "assets/images/icon-snow.webp" : outputs[3].includes("storm") ? "assets/images/icon-storm.webp" : "assets/images/icon-sunny.webp"}`;
+  icon.src = `${outputs[3].includes("partly-cloudy") ? "assets/images/icon-partly-cloudy.webp" : outputs[3].includes("snow") ? "assets/images/icon-snow.webp" : outputs[3].includes("storm") ? "assets/images/icon-storm.webp" : outputs[3].includes("cloudy") ? "assets/images/icon-overcast.webp" : outputs[3].includes("rain") ? "assets/images/icon-drizzle.webp" : outputs[3].includes("fog") ? "assets/images/icon-fog.webp" : "assets/images/icon-sunny.webp"}`;
 });
